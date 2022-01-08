@@ -1,0 +1,53 @@
+$cellSize: 120px;
+
+.field {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .upper-row {
+    display: flex;
+
+    .cell:last-child,
+    .cell:first-child {
+      min-width: $cellSize;
+    }
+  }
+
+  .middle-row {
+    display: flex;
+    flex: 1;
+
+    .left-column,
+    .right-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .center-space {
+      flex: 1;
+    }
+  }
+
+  .bottom-row {
+    display: flex;
+
+    .cell:last-child,
+    .cell:first-child {
+      min-width: $cellSize;
+    }
+  }
+}
+
+.cell {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #333;
+  width: $cellSize;
+  height: $cellSize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
