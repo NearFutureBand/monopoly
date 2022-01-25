@@ -9,11 +9,6 @@ $cellSize: 120px;
 
   .upper-row {
     display: flex;
-
-    .cell:last-child,
-    .cell:first-child {
-      min-width: $cellSize;
-    }
   }
 
   .middle-row {
@@ -24,30 +19,20 @@ $cellSize: 120px;
     .right-column {
       display: flex;
       flex-direction: column;
+      flex: 1;
     }
 
     .center-space {
-      flex: 1;
+      flex: 9;
     }
   }
 
   .bottom-row {
     display: flex;
 
-    .cell:last-child,
-    .cell:first-child {
-      min-width: $cellSize;
-    }
+    // .cell:last-child,
+    // .cell:first-child {
+    //   min-width: $cellSize;
+    // }
   }
-}
-
-.cell {
-  flex: 1;
-  text-align: center;
-  border: 1px solid #333;
-  width: $cellSize;
-  height: $cellSize;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
